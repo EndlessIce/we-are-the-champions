@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are the Champions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="app container container--column container--gap3">
+        <img src="assets/freddie.png"
+            alt="White contour of Freddie Mercury standing astride on stage, rising his right hand, and holding mic in left hand."
+            class="app__img">
+        <h1 class="app__h1">We are the Champions</h1>
+        <div class="container container--column container--gap1 container--width">
+            <textarea id="endorsement-message" placeholder="Write your endorsement here"
+                class="app__input app__input--textarea"></textarea>
+            <div class="container container--gap1">
+                <input id="endorsement-from" type="text" maxlength="20" placeholder="From" class="app__input app__input--text">
+                <input id="endorsement-to" type="text" maxlength="20" placeholder="To" class="app__input app__input--text">
+            </div>
+            <button id="publish-btn" class="app__btn">Publish</button>
+            <p id="error-msg" class="app__error-msg"></p>
+        </div>
+        <h2 class="app__h2">- Endorsements -</h2>
+        <ul id="endorsement-list" class="container container--column container--gap2"></ul>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
